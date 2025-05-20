@@ -100,6 +100,8 @@ button {
 /* Layout  */
 
 header {
+  
+  background-image: linear-gradient(to top, #413d39 0%, #313438 100%); /* later added */
   height: 10rem;
   box-shadow: rgba(255, 255, 255, 0.3) 0px 10px 10px -10px;
   background-color: #202020;
@@ -354,6 +356,7 @@ ul {
   margin: 0px;
   padding: 0px;
 }
+
 .footer-section {
   background: #151414;
   position: relative;
@@ -363,22 +366,27 @@ ul {
   background: #202020;
   padding: 25px 0;
 }
+
 .copyright-text p {
   margin: 0;
   font-size: 14px;
   color: #878787;
 }
+
 .copyright-text p a {
   color: #3a4ed5;
   margin-left: 0.6rem;
 }
+
 .footer-menu li {
   display: inline-block;
   margin-left: 20px;
 }
+
 .footer-menu li:hover a {
   color: #3a4ed5;
 }
+
 .footer-menu li a {
   font-size: 14px;
   color: #878787;
@@ -391,8 +399,10 @@ country Card
 .country-card {
   margin-top: 3.2rem;
 }
+
 .country-section {
   margin: 6.4rem auto 9.6rem auto;
+
   & .grid {
     gap: 3.2rem;
     max-width: 132rem;
@@ -487,7 +497,7 @@ country Card
     }
   }
 
-  & .select-section > option {
+  & .select-section>option {
     background-color: #080509;
     color: rgba(255, 255, 255, 0.8);
     padding: 0.6rem 2.4rem;
@@ -514,6 +524,7 @@ contact us page
     border-color: rgba(255, 255, 255, 0.6);
   }
 }
+
 .contact-wrapper {
   display: flex;
   justify-content: center;
@@ -560,6 +571,7 @@ contact us Page ends here
 }
 
 @media screen and (max-width: 760px) {
+
   .grid-four-cols,
   .grid-three-cols,
   .grid-two-cols {
@@ -573,7 +585,27 @@ contact us Page ends here
 
 /* //Loader  */
 /* HTML: <div class="loader"></div> */
+/* HTML: <div class="loader"></div> */
+
 .loader {
+  width: 50px;
+  --b: 8px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #514b82;
+  -webkit-mask:
+    repeating-conic-gradient(#0000 0deg,#000 1deg 70deg,#0000 71deg 90deg),
+    radial-gradient(farthest-side,#0000 calc(100% - var(--b) - 1px),#000 calc(100% - var(--b)));
+  mask:
+    repeating-conic-gradient(#0000 0deg,#000 1deg 70deg,#0000 71deg 90deg),
+    radial-gradient(farthest-side,#0000 calc(100% - var(--b) - 1px),#000 calc(100% - var(--b)));
+  -webkit-mask-composite: destination-in;
+          mask-composite: intersect;
+  animation: l5 1s infinite;
+}
+@keyframes l5 {to{transform: rotate(.5turn)}}
+
+/* .loader {
   width: 50px;
   padding: 8px;
   aspect-ratio: 1;
@@ -585,7 +617,8 @@ contact us Page ends here
   -webkit-mask-composite: source-out;
   mask-composite: subtract;
   animation: l3 1s infinite linear;
-}
+} */
+
 @keyframes l3 {
   to {
     transform: rotate(1turn);

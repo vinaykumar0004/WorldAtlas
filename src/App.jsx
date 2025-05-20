@@ -12,9 +12,10 @@ import { CountryDetails } from "./components/Layout/CountryDetails";
 
 const router = createBrowserRouter([
   {
+    
     path: "/",
     element: <AppLayout />,
-    errorElement: <ErrorPage/>,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
@@ -43,8 +44,8 @@ const router = createBrowserRouter([
 const App = () => {
 
   return <RouterProvider router={router}> </RouterProvider>;
- 
-  
+
+
 };
 
 export default App;

@@ -35,7 +35,7 @@ export const Footer = () => {
             <div className="copyright-text">
               <p>
                 Copyright &copy; 2025, All Right Reserved
-                <NavLink to="https://google.com" target="_blank">
+                <NavLink to="https://google.com" target="_blank" style={{textDecoration : 'none'}}>
                   Vinay Chahal
                 </NavLink>
               </p>
@@ -44,7 +44,7 @@ export const Footer = () => {
             <div className="footer-menu">
               <ul>
                 <li>
-                  <NavLink to="/">
+                  <NavLink to="/" style={{textDecoration : 'none'}}>
                     Home
                   </NavLink>
                 </li>
@@ -53,20 +53,23 @@ export const Footer = () => {
                   <NavLink
                     to="https://www.instagram.com//"
                     target="_blank"
+                    style={{textDecoration : 'none'}}
+                    
                   >
                     Social
                   </NavLink>
                 </li>
                 <li>
                   <NavLink
-                    to="https://google.com"
+                    to="https://github.com/vinaykumar0004/WorldAtlas"
                     target="_blank"
+                    style={{textDecoration : 'none'}}
                   >
                     Source Code
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/contact">Contact</NavLink>
+                  <NavLink to="/contact" style={{textDecoration : 'none'}}>Contact</NavLink>
                 </li>
               </ul>
             </div>

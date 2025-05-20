@@ -14,7 +14,7 @@ export const Header = () => {
       <div className="container">
         <div className="grid navbar-grid">
           <div className="Logo">
-            <NavLink to="/">
+            <NavLink to="/" style={{textDecoration : 'none'}}>
               <h1>WorldAtlas</h1>
             </NavLink>
           </div>
@@ -22,16 +22,16 @@ export const Header = () => {
           <nav className={show ? "menu-mobile" : "menu-web"}>
             <ul>
               <li>
-                <NavLink to="/">Home</NavLink>
+                <NavLink to="/" style={{textDecoration : 'none'}}>Home</NavLink>
               </li>
               <li>
-                <NavLink to="/about">About</NavLink>
+                <NavLink to="/about" style={{textDecoration : 'none'}}>About</NavLink>
               </li>
               <li>
-                <NavLink to="/country">Country</NavLink>
+                <NavLink to="/country" style={{textDecoration : 'none'}}>Country</NavLink>
               </li>
               <li>
-                <NavLink to="/contact">Contact</NavLink>
+                <NavLink to="/contact" style={{textDecoration : 'none'}}>Contact</NavLink>
               </li>
             </ul>
           </nav>
