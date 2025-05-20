@@ -33,10 +33,10 @@ const fetchAndStoreData = async () => {
       await newCountry.save();
     }
 
-    console.log('✅ Country data sucessfully stored in  MongoDB!');
+    console.log(' Country data sucessfully stored in  MongoDB!');
     process.exit(0);
   } catch (err) {
-    console.error('❌ Error fetching or storing data:', err.message);
+    console.error(' Error fetching or storing data:', err.message);
     process.exit(1);
   }
 };
